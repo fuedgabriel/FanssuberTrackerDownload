@@ -9,7 +9,7 @@ comando: python3 torrent.py
 Altere o aquivo xlsx para o nome torrent.xlsx
 
 
-Para ter uma lista atualiza faça download na lista no próprio site
+Para ter uma lista atualiza faça download da lista no próprio site
 link: https://docs.google.com/spreadsheets/d/1b-qZkI4iIWZbw2C53v0wdZrYVF2ZE3JAqVDsIbZrzSA/edit?usp=sharing
 
 
