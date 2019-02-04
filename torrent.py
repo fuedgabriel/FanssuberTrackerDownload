@@ -2,15 +2,17 @@
 import xlrd
 import time
 import re
+import pyautogui
 
 book = xlrd.open_workbook("torrent.xlsx")
 sh = book.sheet_by_index(0)
 x = (sh.nrows)
 print("Quantidade de animes: " + str(x))
+print("Iniciando em tres segundos")
+time.sleep(3)
+pyautogui.click(171, 751)
 
-#
 for rx in range(0, x):
-    time.sleep(1)
     link = sh.cell_value(rowx=rx, colx=3)
     nome = sh.cell_value(rowx=rx, colx=0)
     nome = nome.replace("[C]","")
@@ -38,8 +40,14 @@ for rx in range(0, x):
 
     print("============================================================================================")
     print("")
-
-
+    time.sleep(1)
+    pyautogui.click(573, 106)
+    pyautogui.click(573, 106)
+    time.sleep(1)
+    pyautogui.typewrite(str(DownloadArq))
+    time.sleep(1)
+    pyautogui.press("return")
+    time.sleep(4)
 
 
 
